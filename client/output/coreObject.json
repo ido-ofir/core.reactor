@@ -1,0 +1,187 @@
+{
+    "core.source.root": {
+        "type": "object",
+        "value": []
+    },
+    "core.templates.master": {
+        "type": "flatTemplate",
+        "title": "Master Template",
+        "value": {
+            "name": "core.templates.master",
+            "schema": [],
+            "body": {
+                "type": "div",
+                "props": {},
+                "children": ["1"]
+            }
+        }
+    },
+    "1": {
+        "type": "flatTemplate",
+        "title": "Template 2",
+        "id": "1",
+        "value": {
+            "name": "Template 2",
+            "propTypes": [],
+            "body": [
+                {
+                    "root": true,
+                    "id": "root",
+                    "type": "top7Render.Root",
+                    "props": {
+                        "image": "images/bg2.jpg"
+                    },
+                    "children": [
+                        "body"
+                    ]
+                },
+                {
+                    "id": "body",
+                    "type": "top7Render.Parallax",
+                    "props": {
+                        "image": "images/bg2.jpg"
+                    },
+                    "children": [
+                        "header",
+                        "1",
+                        "4",
+                        "7",
+                        "2",
+                        "3",
+                        "5",
+                        "6",
+                        "footer"
+                    ]
+                },
+                {
+                    "id": "header",
+                    "type": "top7Render.Header",
+                    "props": {
+                        "title": "Header",
+                        "smallTitle": "top7",
+                        "bigTitle": "המצלמות הטובות 2018",
+                        "smallTitleColor": "#444444",
+                        "bigTitleColor": "#41bbd9",
+                        "background": "#ffffff"
+                    }
+                },
+                {
+                    "id": "1",
+                    "type": "top7Render.Block",
+                    "props": {
+                        "title": "Canon EOS 5D Mark IV",
+                        "background": "rgba(65,187,217,0.36)",
+                        "image": "https://i.ebayimg.com/images/g/GKMAAOSw44BYUKHq/s-l1600.jpg",
+                        "link": "https://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_id=114&ipn=icep&toolid=20004&campid=5338370797&mpre=https%3A%2F%2Fwww.ebay.com%2Fitm%2FCanon-EOS-5D-Mark-IV-MK-4-DSLR-Camera-Body-Only%2F162197189088%3Fepid%3D230154655%26hash%3Ditem25c3b4b1e0%3Ag%3AYpEAAOSwgjFZrW-f",
+                        "imageWidth": "500",
+                        "text": "Canon EOS 5D Mark IV",
+                        "linkToSimilar": "https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575423920&campid=5338370797&mpre=https%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_sacat%3D0%26_nkw%3Dprofessional%2Bcamera%2Bcanon%26_frs%3D1",
+                        "linkToSimilarText": "עוד מצלמות מקצועיות",
+                        "linkToSimilarTextColor": "#222"
+                    }
+                },
+                {
+                    "id": "2",
+                    "type": "top7Render.Block",
+                    "props": {
+                        "title": "Canon Rebel SL2",
+                        "background": "rgba(248,91,92,0.3)",
+                        "image": "https://i.ebayimg.com/images/g/TAsAAOSw1Sdbze7~/s-l500.jpg",
+                        "link": "https://rover.ebay.com/rover/1/711-53200-19255-0/1?mpre=https%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_from%3DR40%26_trksid%3Dm570.l1313%26_nkw%3DCanon%2BEOS%2BRebel%2BSL2%2B%252F%2BEOS%2B200D%26_sacat%3D0&campid=5338370797&toolid=20008",
+                        "imageWidth": "520",
+                        "text": "Canon Rebel SL2",
+                        "linkToSimilar": "https://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_id=114&ipn=icep&toolid=20004&campid=5338370797&mpre=https%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_odkw%3DShockproof%26_osacat%3D625%26_from%3DR40%26_trksid%3Dm570.l1313%26_nkw%3DShockproof%2Bcamera%26_sacat%3D625",
+                        "linkToSimilarText": "עוד מצלמות קשוחות",
+                        "linkToSimilarTextColor": "#3c095e"
+                    }
+                },
+                {
+                    "id": "3",
+                    "type": "top7Render.Block",
+                    "props": {
+                        "title": " Nikon D850",
+                        "background": "rgba(245,198,138,0.29)",
+                        "image": "https://i.ebayimg.com/images/g/np8AAOSwJjNbs9Hg/s-l500.jpg",
+                        "link": "https://rover.ebay.com/rover/1/711-53200-19255-0/1?mpre=https%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_odkw%3Dpro%2Bcameras%26_sop%3D10%26_osacat%3D31388%26_from%3DR40%26_trksid%3Dm570.l1313%26_nkw%3DNikon%2BD850%2BFX-Format%2Bcamera%26_sacat%3D31388&campid=5338370797&toolid=20008",
+                        "imageWidth": "450",
+                        "text": "Kodak PIXPRO FZ43",
+                        "linkToSimilar": "https://rover.ebay.com/rover/1/711-53200-19255-0/1?mpre=https%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_odkw%3Dpro%2Bcameras%26_sop%3D10%26_osacat%3D31388%26_from%3DR40%26_trksid%3Dm570.l1313%26_nkw%3DNikon%2BD850%2BFX-Format%2Bcamera%26_sacat%3D31388&campid=5338370797&toolid=20008",
+                        "linkToSimilarText": "עוד מצלמות יפות",
+                        "linkToSimilarTextColor": "#732f74"
+                    }
+                },
+                {
+                    "id": "4",
+                    "type": "top7Render.Block",
+                    "props": {
+                        "title": " Panasonic Lumix DMC-G85",
+                        "background": "rgba(131,146,221,0.36)",
+                        "image": "https://i.ebayimg.com/images/g/4ZEAAOSwArFbr7FF/s-l500.jpg",
+                        "link": "https://rover.ebay.com/rover/1/711-53200-19255-0/1?mpre=https%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_odkw%3DNikon%2BD850%2BFX-Format%2Bcamera%26_sop%3D10%26_osacat%3D31388%26_from%3DR40%26_trksid%3Dm570.l1313%26_nkw%3DPanasonic%2BLumix%2BDMC%25E2%2580%2591G85%26_sacat%3D31388&campid=5338370797&toolid=20008",
+                        "imageWidth": "400",
+                        "text": " Panasonic Lumix DMC-G85",
+                        "linkToSimilar": "https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575423920&campid=5338370797&mpre=https%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_odkw%3D%25D7%2591%25D7%259D%25D7%25A6%25D7%25A4%25D7%25A9%25D7%2591%25D7%2590%2Bcameras%26_osacat%3D625%26_from%3DR40%26_trksid%3Dm570.l1313%26_nkw%3Dcompact%2Bcameras%26_sacat%3D625",
+                        "linkToSimilarText": "עוד מצלמות קומפקטיות",
+                        "linkToSimilarTextColor": "#282b58"
+                    }
+                },
+                {
+                    "id": "5",
+                    "type": "top7Render.Block",
+                    "props": {
+                        "title": "Fujifilm X-H1 Mirrorless",
+                        "background": "rgba(99,155,104,0.25)",
+                        "image": "https://i.ebayimg.com/images/g/z3sAAOSw2j9bPxn4/s-l500.jpg",
+                        "link": "https://rover.ebay.com/rover/1/711-53200-19255-0/1?mpre=https%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_from%3DR40%26_trksid%3Dm570.l1313%26_nkw%3DFujifilm%2BX-H1%26_sacat%3D0%26LH_TitleDesc%3D0%26_osacat%3D0%26_odkw%3DNikon%2BD500&campid=5338370797&toolid=20008",
+                        "imageWidth": "450",
+                        "text": "Fujifilm X-H1 Mirrorless",
+                        "linkToSimilar": "",
+                        "linkToSimilarText": "goPro עוד מצלמות",
+                        "linkToSimilarTextColor": "#414646"
+                    }
+                },
+                {
+                    "id": "6",
+                    "type": "top7Render.Block",
+                    "props": {
+                        "title": "Sony α7 III",
+                        "background": "rgba(91,226,248,0.23)",
+                        "image": "https://i.ebayimg.com/images/g/0HQAAOSwEHhaspxQ/s-l500.jpg",
+                        "link": "https://rover.ebay.com/rover/1/711-53200-19255-0/1?mpre=https%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_odkw%3DOlympus%2BOM%25E2%2580%2591D%2BE%25E2%2580%2591M1%2BMar%26_sop%3D10%26_osacat%3D31388%26_from%3DR40%26_trksid%3Dm570.l1313%26_nkw%3DSony%2B%25CE%25B17%2BIII%26_sacat%3D31388&campid=5338370797&toolid=20008",
+                        "imageWidth": "450",
+                        "text": "Sony α7 III",
+                        "linkToSimilar": "",
+                        "linkToSimilarText": "עוד מצלמות וידאו",
+                        "linkToSimilarTextColor": "#57272f"
+                    }
+                },
+                {
+                    "id": "7",
+                    "type": "top7Render.Block",
+                    "props": {
+                        "title": "Leica Q Typ 116",
+                        "background": "rgba(187,143,220,0.53)",
+                        "image": "https://cdn.mos.cms.futurecdn.net/hhgE6pZEYULbKRhCC6WtH7-650-80.jpg",
+                        "link": "https://rover.ebay.com/rover/1/711-53200-19255-0/1?icep_id=114&ipn=icep&toolid=20004&campid=5338370797&mpre=https%3A%2F%2Fwww.ebay.com%2Fitm%2FAKASO-V50-Pro-Native-4K-30fps-20MP-WiFi-Action-Camera-with-EIS-Touch-Screen%2F123272268404%3Fhash%3Ditem1cb3998a74%3Ag%3AeOUAAOSwB8FbWR4p",
+                        "imageWidth": "650",
+                        "text": "Leica Q Typ 116",
+                        "linkToSimilar": "https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575423920&campid=5338370797&mpre=https%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_odkw%3DAction%2BTouch%2Bcameras%26_osacat%3D625%26_from%3DR40%26_trksid%3Dm570.l1313%26_nkw%3DAction%2BTouch%2Bscreen%2Bcameras%26_sacat%3D625",
+                        "linkToSimilarText": "עוד מצלמות מגע"
+                    }
+                },
+                {
+                    "id": "footer",
+                    "type": "Button2",
+                    "props": {
+                        "html": "\n\nPrivacy Policy | Terms & Conditions | User Agreement\n",
+                        "jsx": "\nPrivacy Policy | Terms & Conditions | User Agreement\n",
+                        "js": "",
+                        "title": "asdasd",
+                        "title2": "123",
+                        "textColor": "#ffffff"
+                    }
+                }
+            ]
+        }
+    }
+}

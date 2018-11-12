@@ -1,0 +1,18 @@
+{
+    "core.source.root": {
+        "type": "object",
+        "value": []
+    },
+    "core.templates.master": {
+        "type": "templateElement",
+        "value": {
+            "type": "div",
+            "props": {},
+            "children": ["1"]
+        }
+    },
+    "1": {
+        "type": "templateText",
+        "value": "koko loko"
+    }
+}

@@ -1,0 +1,60 @@
+{
+    "3": {
+        "type": "templateElement",
+        "value": {
+            "type": "Button3",
+            "props": {},
+            "children": []
+        },
+        "id": "3"
+    },
+    "core.source.root": {
+        "type": "object",
+        "value": [
+            {
+                "core.source.ref": "Component1"
+            }
+        ],
+        "id": "core.source.root"
+    },
+    "core.source.components": {
+        "type": "object",
+        "value": [
+            {
+                "core.source.ref": "Component1"
+            }
+        ],
+        "id": "core.source.components"
+    },
+    "core.templates.master": {
+        "type": "flatTemplate",
+        "title": "Master Template",
+        "value": {
+            "name": "core.templates.master",
+            "schema": [],
+            "rootElement": {
+                "core.source.ref": "masterRoot"
+            }
+        },
+        "id": "core.templates.master"
+    },
+    "masterRoot": {
+        "type": "templateElement",
+        "value": {
+            "type": "core.web.dom.div",
+            "props": {},
+            "children": [
+                "3"
+            ]
+        },
+        "id": "masterRoot"
+    },
+    "Button3": {
+        "type": "component",
+        "value": {
+            "source": "module.exports = {\n    name: 'Button3',\n    schema: [{\n        key: 'title',\n        type: 'string'\n    }],\n    get(){\n        let core = this;\n        let { React } = core.imports;\n        \n        return {\n            render(){\n                return <button>{ this.props.title || ''} 1112</button>\n            }\n        };\n    }\n}",
+            "code": "\"use strict\";\n\nmodule.exports = {\n  name: 'Button3',\n  schema: [{\n    key: 'title',\n    type: 'string'\n  }],\n  get: function get() {\n    var core = this;\n    var React = core.imports.React;\n    return {\n      render: function render() {\n        return React.createElement(\"button\", null, this.props.title || '', \" 1112\");\n      }\n    };\n  }\n};"
+        },
+        "id": "Button3"
+    }
+}
