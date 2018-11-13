@@ -3,10 +3,12 @@ let server = require('core.node.server');
 let mongodb = require('mongodb');
 let MongoClient = mongodb.MongoClient;
 let path = require('path');
+let https = require('https');
 let fs = require('fs');
 let utils = require('./utils');
 let config = require('./config');
 let babel = require("@babel/core");
+let isProduction = process.argv.indexOf('-p') > -1;
 
 let staticServer = server.express.static(path.resolve(__dirname, '../client/output'));
 // let wwwServer = server.express.static(path.resolve(__dirname, '../www'));
@@ -253,10 +255,23 @@ MongoClient.connect('mongodb://localhost:27017/', { useNewUrlParser: true }, fun
     server.app.use('/www/test', wwwServer);
     server.app.use('/', staticServer);
 
-    server.app.listen(config.port, function(err){
-        if(err){ throw err; }
-        console.log(`listening at http://localhost:${config.port}`);
-    });
+    if(isProduction){
+        let ssl = {
+            cert: fs.readFileSync(config.ssl.cert),
+            key: fs.readFileSync(config.ssl.key)
+        }
+        var httpsServer = https.createServer(ssl, server.app);
+        httpsServer.listen(config.ssl.port, function(err){
+            if(err){ throw err; }
+            console.log(`production server at https://core-reactor.com:${config.ssl.port}`);
+        });
+    }
+    else{
+        server.app.listen(config.port, function(err){
+            if(err){ throw err; }
+            console.log(`listening at http://localhost:${config.port}`);
+        });
+    }
 
 });
 
