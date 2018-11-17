@@ -1,4 +1,2 @@
 # core.reactor
-a React studio for core
-
-!!!
+a React studio for core.
